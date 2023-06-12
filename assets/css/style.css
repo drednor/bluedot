@@ -494,7 +494,7 @@ p {
         left: 60%;
         width: 60px; } }
   .header-area .header-shape-three {
-    left: 70px;
+    left: 170px;
     bottom: 130px; }
     @media (max-width: 767px) {
       .header-area .header-shape-three {
@@ -652,12 +652,18 @@ p {
         .header-banner .banner-content .sub-title {
           font-size: 18px; } }
     .header-banner .banner-content .banner-title {
-      font-size: 60px; }
+      font-size: 60px;
+      transform: translateX(300px);
+      /* white-space: nowrap; */
+     }
       .header-banner .banner-content .banner-title span {
         color: #253150; }
       @media (max-width: 767px) {
         .header-banner .banner-content .banner-title {
-          font-size: 38px; } }
+          font-size: 38px;
+          transform: translateX(300px);
+          /* white-space: nowrap; */
+         } }
     .header-banner .banner-content .banner-contact {
       position: relative;
       font-size: 15px;
@@ -665,11 +671,13 @@ p {
       font-family: 'Barlow', sans-serif;
       color: #253150;
       text-transform: uppercase;
-      margin-left: 70px; }
-      .header-banner .banner-content .banner-contact::before {
+      margin-left: 70px;
+      transform: translateX(245px); }
+      /* .header-banner .banner-content .banner-contact::before {
         position: absolute;
         content: '';
         width: 60px;
+        transform: translateX(300px);
         height: 2px;
         background-color: #253150;
         left: -70px;
@@ -678,7 +686,7 @@ p {
         -moz-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
         -o-transform: translateY(-50%);
-        transform: translateY(-50%); }
+        transform: translateY(-50%); } */
 
 /*===========================
     3.ABOUT css 
@@ -1360,3 +1368,148 @@ p.form-message.error {
   .back-to-top:hover {
     color: #253150;
     background-color: #fff; }
+
+  /*===========================
+      10.SLIDER css 
+  ===========================*/
+
+  #carousel-area {
+    overflow: hidden;
+    background: #2c3e50;
+  }
+  
+  #carousel-area .carousel-item {
+    background-size: 100%;
+  }
+  
+  #carousel-area .carousel-item .carousel-caption {
+    top: 32%;
+    right: 10%;
+    left: 12%;
+    text-shadow: none;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  
+  #carousel-area .carousel-item .carousel-caption h3 {
+    color: #fff;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 38px;
+  }
+  
+  #carousel-area .carousel-item .carousel-caption h2 {
+    font-size: 80px;
+    font-weight: 700;
+    color: #fff;
+  }
+  
+  #carousel-area .carousel-item .carousel-caption h4 {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 30px;
+  }
+  
+  #carousel-area .carousel-control {
+    display: none;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  #carousel-area:hover .carousel-control {
+    display: block;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+  }
+  
+  #carousel-area .carousel-control-next, #carousel-area .carousel-control-prev {
+    opacity: 1;
+  }
+  
+  #carousel-area .carousel-control-next i, #carousel-area .carousel-control-prev i {
+    width: 48px;
+    line-height: 48px;
+    height: 48px;
+    color: #fff;
+    font-size: 24px;
+    display: inline-block;
+    background: #F97794;
+    border-radius: 30px;
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+  }
+  
+  #carousel-area .carousel-control-next i:hover, #carousel-area .carousel-control-prev i:hover {
+    opacity: 0.9;
+  }
+  
+  #carousel-area .carousel-indicators li:hover,
+  #carousel-area .carousel-indicators li.active {
+    opacity: 1;
+  }
+  
+  #carousel-area .carousel-indicators {
+    bottom: 35px;
+  }
+  
+  #carousel-area .carousel-indicators li {
+    width: 30px;
+    height: 7px;
+    border-radius: 4px;
+  }
+  
+  #slider-area {
+    margin-top: -1px;
+  }
+  
+  #slider-area .btn {
+    margin-right: 15px;
+  }
+  
+  #slider-area .large_white {
+    color: #fff;
+  }
+  
+  #slider-area .about-info p {
+    color: #333;
+  }
+  
+  .contents p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 50px;
+  }
+  
+  .contents .header-button .btn i {
+    margin-left: 10px;
+  }
+
+
+.card-pricing.popular {
+    z-index: 1;
+    border: 3px solid #253150;
+}
+.card-pricing .list-unstyled li {
+    padding: .5rem 0;
+    color: #6c757d;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #253150;
+  border-color: #253150;
+}
+
