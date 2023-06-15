@@ -1,21 +1,4 @@
-/*-----------------------------------------------------------------------------------
 
-    Template Name: Interior
-    Description: Interior - Interior Design and Architecture Bootstrap Template
-    Author: UIdeck
-    Version: 1.0
-
------------------------------------------------------------------------------------
-
-    CSS INDEX
-    ===================
-
-    01. Theme default CSS
-	02. Header
-    03. Hero
-	04. Footer
-
------------------------------------------------------------------------------------*/
 /*===========================
     1. COMMON css 
 ===========================*/
@@ -81,10 +64,12 @@ h5 {
 h6 {
   font-size: 16px; }
 
-ul, ol {
+/* ul, ol {
   margin: 0px;
   padding: 0px;
-  list-style-type: none; }
+  list-style-type: none; } */
+
+
 
 p {
   font-size: 17px;
@@ -494,8 +479,8 @@ p {
         left: 60%;
         width: 60px; } }
   .header-area .header-shape-three {
-    left: 170px;
-    bottom: 130px; }
+    left: 20px;
+    bottom: 150px; }
     @media (max-width: 767px) {
       .header-area .header-shape-three {
         width: 90px;
@@ -652,18 +637,12 @@ p {
         .header-banner .banner-content .sub-title {
           font-size: 18px; } }
     .header-banner .banner-content .banner-title {
-      font-size: 60px;
-      transform: translateX(300px);
-      /* white-space: nowrap; */
-     }
+      font-size: 60px;}
       .header-banner .banner-content .banner-title span {
         color: #253150; }
       @media (max-width: 767px) {
         .header-banner .banner-content .banner-title {
-          font-size: 38px;
-          transform: translateX(300px);
-          /* white-space: nowrap; */
-         } }
+          font-size: 38px;} }
     .header-banner .banner-content .banner-contact {
       position: relative;
       font-size: 15px;
@@ -671,14 +650,12 @@ p {
       font-family: 'Barlow', sans-serif;
       color: #253150;
       text-transform: uppercase;
-      margin-left: 70px;
-      transform: translateX(245px); }
-      /* .header-banner .banner-content .banner-contact::before {
+      margin-left: 70px; }
+      .header-banner .banner-content .banner-contact::before {
         position: absolute;
         content: '';
         width: 60px;
-        transform: translateX(300px);
-        height: 2px;
+        height: 1px;
         background-color: #253150;
         left: -70px;
         top: 50%;
@@ -686,7 +663,7 @@ p {
         -moz-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
         -o-transform: translateY(-50%);
-        transform: translateY(-50%); } */
+        transform: translateY(-50%); }
 
 /*===========================
     3.ABOUT css 
@@ -1512,4 +1489,3 @@ p.form-message.error {
   background-color: #253150;
   border-color: #253150;
 }
-
