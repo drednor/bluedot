@@ -1489,3 +1489,8 @@ p.form-message.error {
   background-color: #253150;
   border-color: #253150;
 }
+
+.pageclip-form__submit::after {
+  border-color: rgba(0, 255, 0, 0.8);
+  border-left-color: blue;
+}
