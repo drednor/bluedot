@@ -5,7 +5,7 @@ $(function() {
     //===== Prealoder
     
     $(window).on('load', function(event) {
-        $('.preloader').delay(100).fadeOut(100);
+        $('.preloader').delay(500).fadeOut(500);
     });
     
     
@@ -125,9 +125,9 @@ $(function() {
     // Show or hide the sticky footer button
     $(window).on('scroll', function(event) {
         if($(this).scrollTop() > 600){
-            $('.back-to-top').fadeIn(20)
+            $('.back-to-top').fadeIn(200)
         } else{
-            $('.back-to-top').fadeOut(20)
+            $('.back-to-top').fadeOut(200)
         }
     });
     
@@ -139,6 +139,45 @@ $(function() {
             scrollTop: 0,
         }, 1500);
     });
+
+    //===== Isotope Project 1
+    
+    $('.container').imagesLoaded(function () {
+      var $grid = $('.grid').isotope({
+      // options
+          transitionDuration: '1s',
+          itemSelector: '.grid-item',
+          percentPosition: true,
+          masonry: {
+              
+          }
+          
+      });
+      
+      // filter items on button click
+      $('.project-menu ul').on( 'click', 'li', function() {
+        var filterValue = $(this).attr('data-filter');
+        $grid.isotope({ filter: filterValue });
+      });
+      
+      //for menu active class
+      $('.project-menu ul li').on('click', function (event) {
+          $(this).siblings('.active').removeClass('active');
+          $(this).addClass('active');
+          event.preventDefault();
+      });
+  });
+
+  //===== Magnific Popup
+
+  $('.image-popup').magnificPopup({
+    type: 'image',
+    gallery:{
+      enabled:true
+    }
+  });
+
+    
     
     
     

@@ -38,6 +38,9 @@
 
     <!--====== Style css ======-->
     <link rel="stylesheet" href="assets/css/style.css">
+
+    <!--====== Magnific Popup CSS ======-->
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
     
     <!--====== Contact form css ======-->
     <link rel="stylesheet" href="https://s.pageclip.co/v1/pageclip.css" media="screen">
@@ -283,6 +286,117 @@
 
     <!--====== SERVICES PART ENDS ======-->
 
+    <!--====== PROJECT GALLERY PART START ======-->
+
+    <section id="portfolio" class="project-masonry-area pt-115">
+        <div class="container">
+            <div class="row align-items-end">
+                <div class="col-lg-4">
+                    <div class="section-title pb-20  wow fadeIn" data-wow-duration="1s" data-wow-delay="0.4s">
+                        <h6 class="sub-title">Portfolio</h6>
+                        <h4 class="title">Portfolio <span>Gallery.</span></h4>
+                    </div> <!-- section title -->
+                </div>
+                <div class="col-lg-8">
+                    <div class="project-menu text-center text-sm-left text-lg-right pb-20">
+                        <ul>
+                            <li class="active" data-filter="*">See All</li>
+                            <li data-filter=".apps">Apps</li>
+                            <li data-filter=".branding">Branding</li>
+                            <li data-filter=".creative">Creative</li>
+                            <li data-filter=".laptop">Laptop</li>
+                            <li data-filter=".product">Product</li>
+                        </ul>
+                    </div> <!-- project menu -->
+                </div>
+            </div> <!-- row -->
+            <div class="row grid">
+                <div class="col-lg-4 col-sm-6 grid-item apps creative laptop">
+                    <div class="single-gallery gallery-masonry mt-30">
+                        <div class="gallery-image">
+                            <img src="assets/images/portfolio/4.jpeg" alt="protfolio">
+                        </div>
+                        <div class="gallery-icon">
+                            <a class="image-popup" href="assets/images/portfolio/4.jpeg">
+                                <span></span>
+                            </a>
+                        </div>
+                    </div> <!-- single gallery -->
+                </div>
+                <div class="col-lg-4 col-sm-6 grid-item branding creative">
+                    <div class="single-gallery gallery-masonry mt-30">
+                        <div class="gallery-image">
+                            <img src="assets/images/portfolio/5.jpeg" alt="protfolio">
+                        </div>
+                        <div class="gallery-icon">
+                            <a class="image-popup" href="assets/images/portfolio/5.jpeg">
+                                <span></span>
+                            </a>
+                        </div>
+                    </div> <!-- single gallery -->
+                </div>
+                <div class="col-lg-4 col-sm-6 grid-item apps branding product">
+                    <div class="single-gallery gallery-masonry mt-30">
+                        <div class="gallery-image">
+                            <img src="assets/images/portfolio/6.jpeg" alt="protfolio">
+                        </div>
+                        <div class="gallery-icon">
+                            <a class="image-popup" href="assets/images/portfolio/6.jpeg">
+                                <span></span>
+                            </a>
+                        </div>
+                    </div> <!-- single gallery -->
+                </div>
+                <div class="col-lg-4 col-sm-6 grid-item laptop product">
+                    <div class="single-gallery gallery-masonry mt-30">
+                        <div class="gallery-image">
+                            <img src="assets/images/portfolio/7.jpeg" alt="protfolio">
+                        </div>
+                        <div class="gallery-icon">
+                            <a class="image-popup" href="assets/images/portfolio/7.jpeg">
+                                <span></span>
+                            </a>
+                        </div>
+                    </div> <!-- single gallery -->
+                </div>
+                <div class="col-lg-4 col-sm-6 grid-item branding creative">
+                    <div class="single-gallery gallery-masonry mt-30">
+                        <div class="gallery-image">
+                            <img src="assets/images/portfolio/25.jpeg" alt="protfolio">
+                        </div>
+                        <div class="gallery-icon">
+                            <a class="image-popup" href="assets/images/portfolio/25.jpeg">
+                                <span></span>
+                            </a>
+                        </div>
+                    </div> <!-- single gallery -->
+                </div>
+                <div class="col-lg-4 col-sm-6 grid-item apps laptop product">
+                    <div class="single-gallery gallery-masonry mt-30">
+                        <div class="gallery-image">
+                            <img src="assets/images/portfolio/39.jpeg" alt="protfolio">
+                        </div>
+                        <div class="gallery-icon">
+                            <a class="image-popup" href="assets/images/portfolio/39.jpeg">
+                                <span></span>
+                            </a>
+                        </div>
+                    </div> <!-- single gallery -->
+                </div>
+                
+            </div> <!-- row -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="gallery-btn mt-60 text-center">
+                        <a class="main-btn" href="#">Load More</a>
+                    </div>
+                </div>
+            </div> <!-- row -->
+        </div> <!-- container -->
+    </section>
+
+    <!--====== PROJECT GALLERY PART ENDS ======-->
+    
     <!--====== PROJECT PART START ======-->
 
     <section id="project" class="project-area pt-125 pb-130">
@@ -730,7 +844,7 @@
                                 </div>
                                 <div class="col-md-6">
                                     <div class="single-form form-group">
-                                        <input type="text" name="phone" placeholder="Phone" data-error="Phone is required." required="required">
+                                        <input type="number" name="phone" placeholder="Phone" data-error="Phone is required." required="required">
                                         <div class="help-block with-errors"></div>
                                     </div> <!-- single form -->
                                 </div>
@@ -903,7 +1017,7 @@
 
 
 
-
+    
 
 
 
@@ -917,8 +1031,18 @@
     <!--====== WOW js ======-->
     <script src="assets/js/wow.min.js"></script>
 
+    <!--====== Appear js ======-->
+    <script src="assets/js/jquery.appear.min.js"></script>
+
     <!--====== Slick js ======-->
     <script src="assets/js/slick.min.js"></script>
+
+    <!--====== Counter Up js ======-->
+    <script src="assets/js/waypoints.min.js"></script>
+
+    <!--====== Isotope js ======-->
+    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/js/isotope.pkgd.min.js"></script>
 
     <!--====== Scrolling Nav js ======-->
     <script src="assets/js/scrolling-nav.js"></script>
@@ -927,6 +1051,17 @@
     <!--====== Aos js ======-->
     <script src="assets/js/aos.js"></script>
 
+    <!--====== Headroom js ======-->
+    <script src="assets/js/headroom.min.js"></script>
+
+    <!--====== Jquery Nav js ======-->
+    <script src="assets/js/jquery.nav.js"></script>
+
+    <!--====== Scroll It js ======-->
+    <script src="assets/js/scrollIt.min.js"></script>
+
+    <!--====== Magnific Popup js ======-->
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
 
     <!--====== Main js ======-->
     <script src="assets/js/main.js"></script>
