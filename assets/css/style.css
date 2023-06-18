@@ -70,7 +70,6 @@ h6 {
   list-style-type: none; } */
 
 
-
 p {
   font-size: 17px;
   font-weight: 400;
@@ -455,6 +454,9 @@ p {
 /*===========================
     2.HEADER css 
 ===========================*/
+.bg-red {
+  background-color: #8dd8f8;
+}
 .header-area {
   position: relative; }
   .header-area .shape {
@@ -479,8 +481,8 @@ p {
         left: 60%;
         width: 60px; } }
   .header-area .header-shape-three {
-    left: 20px;
-    bottom: 150px; }
+    left: 0px;
+    bottom: 0px; }
     @media (max-width: 767px) {
       .header-area .header-shape-three {
         width: 90px;
@@ -1491,8 +1493,8 @@ p.form-message.error {
 }
 
 .pageclip-form__submit::after {
-  border-color: rgba(0, 255, 0, 0.8);
-  border-left-color: blue;
+  border-color: rgb(255, 255, 255);
+  border-left-color: #253150;
 }
 
 /*===========================
