@@ -488,7 +488,7 @@ p {
         width: 90px;
         bottom: 200px; } }
   .header-area .header-shape-fore {
-    left: 48%;
+    left: 75%;
     bottom: -90px;
     -webkit-transform: translateX(-50%);
     -moz-transform: translateX(-50%);
