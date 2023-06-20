@@ -471,8 +471,8 @@ p {
       .header-area .header-shape-one {
         width: 180px; } }
   .header-area .header-shape-tow {
-    top: 25px;
-    left: 31%; }
+    top: 105px;
+    left: 41%; }
     @media only screen and (min-width: 768px) and (max-width: 991px) {
       .header-area .header-shape-tow {
         left: 40%; } }
