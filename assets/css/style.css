@@ -454,6 +454,10 @@ p {
 /*===========================
     2.HEADER css 
 ===========================*/
+.resized-image1 {
+  width: 80px;
+  height: 80px;
+}
 .bg-red {
   background-color: #8dd8f8;
 }
